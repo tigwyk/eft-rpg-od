@@ -209,7 +209,7 @@ const dungeonEvent = () => {
                     document.querySelector("#choice1").onclick = function () {
                         if (player.gold < cost) {
                             sfxDeny.play();
-                            addDungeonLog("You don't have enough gold.");
+                            addDungeonLog("You don't have enough roubles.");
                         } else {
                             player.gold -= cost;
                             sfxConfirm.play();
@@ -239,7 +239,7 @@ const dungeonEvent = () => {
                     document.querySelector("#choice1").onclick = function () {
                         if (player.gold < cost) {
                             sfxDeny.play();
-                            addDungeonLog("You don't have enough gold.");
+                            addDungeonLog("You don't have enough roubles.");
                         } else {
                             player.gold -= cost;
                             sfxConfirm.play();
