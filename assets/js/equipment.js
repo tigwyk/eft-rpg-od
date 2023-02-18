@@ -16,7 +16,7 @@ const createEquipment = () => {
 
     // Generate random equipment name and type based on attribute
     if (equipment.attribute == "Damage") {
-        const equipmentCategories = ["Sword", "Axe", "Hammer", "Dagger", "Flail", "Scythe"];
+        const equipmentCategories = ["AR-15 rifle", "7.62 AK rifle", "Shotgun", "Submachine gun", "Sniper rifle", "Grenade launcher"];
         equipment.category = equipmentCategories[Math.floor(Math.random() * equipmentCategories.length)];
         equipment.type = "Weapon";
     } else if (equipment.attribute == "Defense") {
@@ -86,11 +86,11 @@ const createEquipment = () => {
     const dmgDefStats = ["hp", "def", "atk", "atk", "critRate", "critDmg"];
     let statTypes;
     if (equipment.attribute == "Damage") {
-        if (equipment.category == "Axe" || equipment.category == "Scythe") {
+        if (equipment.category == "7.62 AK rifle" || equipment.category == "Grenade launcher") {
             statTypes = damageyStats;
-        } else if (equipment.category == "Dagger" || equipment.category == "Flail") {
+        } else if (equipment.category == "Submachine gun" || equipment.category == "Sniper rifle") {
             statTypes = speedyStats;
-        } else if (equipment.category == "Hammer") {
+        } else if (equipment.category == "Shotgun") {
             statTypes = dmgDefStats;
         } else {
             statTypes = physicalStats;
@@ -216,18 +216,18 @@ const createEquipment = () => {
 }
 
 const equipmentIcon = (equipment) => {
-    if (equipment == "Sword") {
+    if (equipment == "AR-15 rifle") {
         return '<i class="ra ra-relic-blade"></i>';
-    } else if (equipment == "Axe") {
-        return '<i class="ra ra-axe"></i>';
-    } else if (equipment == "Hammer") {
-        return '<i class="ra ra-flat-hammer"></i>';
-    } else if (equipment == "Dagger") {
+    } else if (equipment == "7.62 AK rifle") {
+        return '<i class="ra ra-7.62 AK rifle"></i>';
+    } else if (equipment == "Shotgun") {
+        return '<i class="ra ra-flat-Shotgun"></i>';
+    } else if (equipment == "Submachine gun") {
         return '<i class="ra ra-bowie-knife"></i>';
-    } else if (equipment == "Flail") {
+    } else if (equipment == "Sniper rifle") {
         return '<i class="ra ra-chain"></i>';
-    } else if (equipment == "Scythe") {
-        return '<i class="ra ra-scythe"></i>';
+    } else if (equipment == "Grenade launcher") {
+        return '<i class="ra ra-Grenade launcher"></i>';
     } else if (equipment == "Plate") {
         return '<i class="ra ra-vest"></i>';
     } else if (equipment == "Chain") {
