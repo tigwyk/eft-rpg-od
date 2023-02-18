@@ -472,59 +472,59 @@ const setEnemyImg = () => {
             enemy.image.size = '70%';
             break;
         case 'Cultist':
-            enemy.image.name = 'skeleton_boss';
+            enemy.image.name = 'CultistPriest';
             enemy.image.size = '50%';
             break;
         case 'Sektant':
-            enemy.image.name = 'spider_fire';
+            enemy.image.name = 'CultistPriest';
             enemy.image.size = '50%';
             break;
         case 'Aimbotkin':
-            enemy.image.name = 'cerberus_ptolemaios';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Triggerhappy':
-            enemy.image.name = 'hellhound';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Scottsdale':
-            enemy.image.name = 'berthelot';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Cliffhanger':
-            enemy.image.name = 'slime_boss';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Hellshrimp':
-            enemy.image.name = 'zodiac_cancer';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Nevada':
-            enemy.image.name = 'alfadriel';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Madknight':
-            enemy.image.name = 'tiamat';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Two-Finger':
-            enemy.image.name = 'fallen_king';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Boogerman':
-            enemy.image.name = 'zodiac_aries';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Donutop':
-            enemy.image.name = 'spider_boss';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Juggernaut':
-            enemy.image.name = 'ant_queen';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
         case 'Rambo':
-            enemy.image.name = 'wolf_boss';
+            enemy.image.name = 'Rogue';
             enemy.image.size = '50%';
             break;
 
