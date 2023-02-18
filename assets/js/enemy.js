@@ -28,18 +28,18 @@ let enemy = {
 const generateRandomEnemy = (condition) => {
     // List of possible enemy names
     const enemyNames = [
-        // Goblin
-        'Goblin', 'Goblin Rogue', 'Goblin Mage', 'Goblin Archer',
-        // Wolf
-        'Wolf', 'Black Wolf', 'Winter Wolf',
-        // Slime
-        'Slime', 'Angel Slime', 'Knight Slime', 'Crusader Slime',
-        // Orc
-        'Orc Swordsmaster', 'Orc Axe', 'Orc Archer', 'Orc Mage',
-        // Spider
-        'Spider', 'Red Spider', 'Green Spider',
-        // Skeleton
-        'Skeleton Archer', 'Skeleton Swordsmaster', 'Skeleton Knight', 'Skeleton Mage', 'Skeleton Pirate', 'Skeleton Samurai', 'Skeleton Warrior',
+        // Scav
+        'Scav', 'Pistol Scav', 'Buckshot Scav', 'Sniper Scav',
+        // USEC PMC
+        'Timmy USEC PMC', 'Scav-geared USEC PMC', 'Budget-kit USEC PMC',
+        // BEAR PMC
+        'Timmy BEAR PMC', 'Scav-geared BEAR PMC', 'Budget-kit BEAR PMC', 'Juiced BEAR PMC',
+        // More Scav
+        'Juiced Scav', 'ADAR Scav', 'Mosin Scav', 'Kedr Scav',
+        // Raiders
+        'Manul', 'Vepr', 'Leopard',
+        // More Raiders
+        'Padalschik', 'Stervyatnik', 'Medved', 'Berkut', 'Barrakuda', 'Skorpion', 'Puma',
         // Bosses
         'Cultist Priest', 'Cultist', 'Sektant', 'Aimbotkin', 'Triggerhappy', 'Scottsdale', 'Cliffhanger', 'Hellshrimp', 'Nevada', 'Madknight', 'Two-Finger', 'Boogerman', 'Juggernaut', 'Donutop', 'Rambo',
         // Monarch
@@ -76,12 +76,12 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Goblin Mage', 'Goblin Archer',
-                    'Wolf', 'Black Wolf', 'Winter Wolf',
-                    'Knight Slime',
-                    'Orc Swordsmaster', 'Orc Axe', 'Orc Archer', 'Orc Mage',
-                    'Red Spider',
-                    'Skeleton Archer', 'Skeleton Swordsmaster', 'Skeleton Mage', 'Skeleton Pirate', 'Skeleton Samurai',
+                    'Buckshot Scav', 'Sniper Scav',
+                    'Timmy USEC PMC', 'Scav-geared USEC PMC', 'Budget-kit USEC PMC',
+                    'Budget-kit BEAR PMC',
+                    'Juiced Scav', 'ADAR Scav', 'Mosin Scav', 'KEDR Scav',
+                    'Vepr',
+                    'Padalschik', 'Stervyatnik', 'Berkut', 'Barrakuda', 'Skorpion',
                 ].includes(name));
             }
             enemy.name = selectedEnemies[Math.floor(Math.random() * selectedEnemies.length)];
@@ -99,9 +99,9 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Angel Slime', 'Knight Slime', 'Crusader Slime',
-                    'Green Spider',
-                    'Skeleton Knight', 'Skeleton Warrior'
+                    'Scav-geared BEAR PMC', 'Budget-kit BEAR PMC', 'Juiced BEAR PMC',
+                    'Leopard',
+                    'Medved', 'Puma'
                 ].includes(name));
             }
             enemy.name = selectedEnemies[Math.floor(Math.random() * selectedEnemies.length)];
@@ -119,11 +119,11 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Goblin',
-                    'Slime', 'Angel Slime', 'Knight Slime',
-                    'Orc Swordsmaster', 'Orc Axe', 'Orc Archer', 'Orc Mage',
-                    'Spider',
-                    'Skeleton Knight', 'Skeleton Warrior'
+                    'Scav',
+                    'Timmy BEAR PMC', 'Scav-geared BEAR PMC', 'Budget-kit BEAR PMC',
+                    'Juiced Scav', 'ADAR Scav', 'Mosin Scav', 'KEDR Scav',
+                    'Manul',
+                    'Medved', 'Puma'
                 ].includes(name));
             }
             enemy.name = selectedEnemies[Math.floor(Math.random() * selectedEnemies.length)];
@@ -141,11 +141,11 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Goblin', 'Goblin Rogue', 'Goblin Archer',
-                    'Wolf', 'Black Wolf', 'Winter Wolf',
-                    'Orc Swordsmaster',
-                    'Spider', 'Red Spider', 'Green Spider',
-                    'Skeleton Swordsmaster', 'Skeleton Pirate', 'Skeleton Samurai'
+                    'Scav', 'Pistol Scav', 'Sniper Scav',
+                    'Timmy USEC PMC', 'Scav-geared USEC PMC', 'Budget-kit USEC PMC',
+                    'Juiced Scav',
+                    'Manul', 'Vepr', 'Leopard',
+                    'Stervyatnik', 'Barrakuda', 'Skorpion'
                 ].includes(name));
             }
             enemy.name = selectedEnemies[Math.floor(Math.random() * selectedEnemies.length)];
@@ -163,11 +163,11 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Goblin Rogue',
-                    'Wolf', 'Black Wolf', 'Winter Wolf',
-                    'Orc Swordsmaster', 'Orc Axe',
-                    'Red Spider',
-                    'Skeleton Swordsmaster', 'Skeleton Samurai'
+                    'Pistol Scav',
+                    'Timmy USEC PMC', 'Scav-geared USEC PMC', 'Budget-kit USEC PMC',
+                    'Juiced Scav', 'ADAR Scav',
+                    'Vepr',
+                    'Stervyatnik', 'Skorpion'
                 ].includes(name));
             }
             enemy.name = selectedEnemies[Math.floor(Math.random() * selectedEnemies.length)];
@@ -340,102 +340,102 @@ const setEnemyImg = () => {
     // Apply monster image
     enemy.image.type = '.png';
     switch (enemy.name) {
-        // Goblins
-        case 'Goblin':
-            enemy.image.name = 'goblin';
+        // Scavs
+        case 'Scav':
+            enemy.image.name = 'Scav';
             enemy.image.size = '50%';
             break;
-        case 'Goblin Rogue':
-            enemy.image.name = 'goblin_rogue';
+        case 'Pistol Scav':
+            enemy.image.name = 'Scav';
             enemy.image.size = '50%';
             break;
-        case 'Goblin Archer':
-            enemy.image.name = 'goblin_archer';
+        case 'Sniper Scav':
+            enemy.image.name = 'Scav';
             enemy.image.size = '50%';
             break;
-        case 'Goblin Mage':
-            enemy.image.name = 'goblin_mage';
+        case 'Buckshot Scav':
+            enemy.image.name = 'Scav';
             enemy.image.size = '50%';
             break;
 
-        // Wolf
-        case 'Wolf':
-            enemy.image.name = 'wolf';
+        // USEC PMC
+        case 'Timmy USEC PMC':
+            enemy.image.name = 'Timmy USEC PMC';
             enemy.image.size = '50%';
             break;
-        case 'Black Wolf':
+        case 'Scav-geared USEC PMC':
             enemy.image.name = 'wolf_black';
             enemy.image.size = '50%';
             break;
-        case 'Winter Wolf':
+        case 'Budget-kit USEC PMC':
             enemy.image.name = 'wolf_winter';
             enemy.image.size = '50%';
             break;
 
-        // Slime
-        case 'Slime':
-            enemy.image.name = 'slime';
+        // Timmy BEAR PMC
+        case 'Timmy BEAR PMC':
+            enemy.image.name = 'Timmy BEAR PMC';
             enemy.image.size = '50%';
             break;
-        case 'Angel Slime':
+        case 'Scav-geared BEAR PMC':
             enemy.image.name = 'slime_angel';
             enemy.image.size = '50%';
             break;
-        case 'Knight Slime':
+        case 'Budget-kit BEAR PMC':
             enemy.image.name = 'slime_knight';
             enemy.image.size = '50%';
             break;
-        case 'Crusader Slime':
+        case 'Juiced BEAR PMC':
             enemy.image.name = 'slime_crusader';
             enemy.image.size = '50%';
             break;
 
         // Orc
-        case 'Orc Swordsmaster':
+        case 'Juiced Scav':
             enemy.image.name = 'orc_swordsmaster';
             enemy.image.size = '50%';
             break;
-        case 'Orc Axe':
+        case 'ADAR Scav':
             enemy.image.name = 'orc_axe';
             enemy.image.size = '50%';
             break;
-        case 'Orc Archer':
+        case 'Mosin Scav':
             enemy.image.name = 'orc_archer';
             enemy.image.size = '50%';
             break;
-        case 'Orc Mage':
+        case 'KEDR Scav':
             enemy.image.name = 'orc_mage';
             enemy.image.size = '50%';
             break;
 
-        // Spider
-        case 'Spider':
-            enemy.image.name = 'spider';
+        // Raiders
+        case 'Manul':
+            enemy.image.name = 'Manul';
             enemy.image.size = '50%';
             break;
-        case 'Red Spider':
+        case 'Vepr':
             enemy.image.name = 'spider_red';
             enemy.image.size = '50%';
             break;
-        case 'Green Spider':
+        case 'Leopard':
             enemy.image.name = 'spider_green';
             enemy.image.size = '50%';
             break;
 
-        // Skeleton
-        case 'Skeleton Archer':
+        // More Raiders
+        case 'Padalschik':
             enemy.image.name = 'skeleton_archer';
             enemy.image.size = '50%';
             break;
-        case 'Skeleton Swordsmaster':
+        case 'Stervyatnik':
             enemy.image.name = 'skeleton_swordsmaster';
             enemy.image.size = '50%';
             break;
-        case 'Skeleton Knight':
+        case 'Medved':
             enemy.image.name = 'skeleton_knight';
             enemy.image.size = '50%';
             break;
-        case 'Skeleton Mage':
+        case 'Berkut':
             if (randomizeNum(1, 2) == 1) {
                 enemy.image.name = 'skeleton_mage1';
             } else {
@@ -443,15 +443,15 @@ const setEnemyImg = () => {
             }
             enemy.image.size = '50%';
             break;
-        case 'Skeleton Pirate':
+        case 'Barrakuda':
             enemy.image.name = 'skeleton_pirate';
             enemy.image.size = '50%';
             break;
-        case 'Skeleton Samurai':
+        case 'Skorpion':
             enemy.image.name = 'skeleton_samurai';
             enemy.image.size = '50%';
             break;
-        case 'Skeleton Warrior':
+        case 'Puma':
             enemy.image.name = 'skeleton_warrior';
             enemy.image.size = '50%';
             break;
