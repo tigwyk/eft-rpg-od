@@ -530,15 +530,15 @@ const setEnemyImg = () => {
 
         // Special Boss
         case 'Reshala':
-            enemy.image.name = 'spider_dragon';
+            enemy.image.name = 'Reshala';
             enemy.image.size = '70%';
             break;
         case 'Glukhar':
-            enemy.image.name = 'skeleton_dragon';
+            enemy.image.name = 'Glukhar';
             enemy.image.size = '70%';
             break;
         case 'Shturman':
-            enemy.image.name = 'firelord';
+            enemy.image.name = 'Shturman';
             enemy.image.size = '70%';
             break;
         case 'Killa':
@@ -562,7 +562,7 @@ const setEnemyImg = () => {
             enemy.image.size = '70%';
             break;
         case 'Sanitar':
-            enemy.image.name = 'zalaras';
+            enemy.image.name = 'Sanitar';
             enemy.image.size = '70%';
             break;
     };
