@@ -360,99 +360,99 @@ const setEnemyImg = () => {
 
         // USEC PMC
         case 'Timmy USEC PMC':
-            enemy.image.name = 'Timmy USEC PMC';
+            enemy.image.name = 'USEC';
             enemy.image.size = '50%';
             break;
         case 'Scav-geared USEC PMC':
-            enemy.image.name = 'wolf_black';
+            enemy.image.name = 'USEC';
             enemy.image.size = '50%';
             break;
         case 'Budget-kit USEC PMC':
-            enemy.image.name = 'wolf_winter';
+            enemy.image.name = 'USEC';
             enemy.image.size = '50%';
             break;
 
         // Timmy BEAR PMC
         case 'Timmy BEAR PMC':
-            enemy.image.name = 'Timmy BEAR PMC';
+            enemy.image.name = 'BEAR';
             enemy.image.size = '50%';
             break;
         case 'Scav-geared BEAR PMC':
-            enemy.image.name = 'slime_angel';
+            enemy.image.name = 'BEAR';
             enemy.image.size = '50%';
             break;
         case 'Budget-kit BEAR PMC':
-            enemy.image.name = 'slime_knight';
+            enemy.image.name = 'BEAR';
             enemy.image.size = '50%';
             break;
         case 'Juiced BEAR PMC':
-            enemy.image.name = 'slime_crusader';
+            enemy.image.name = 'BEAR';
             enemy.image.size = '50%';
             break;
 
         // Orc
         case 'Juiced Scav':
-            enemy.image.name = 'orc_swordsmaster';
+            enemy.image.name = 'Scav';
             enemy.image.size = '50%';
             break;
         case 'ADAR Scav':
-            enemy.image.name = 'orc_axe';
+            enemy.image.name = 'Scav';
             enemy.image.size = '50%';
             break;
         case 'Mosin Scav':
-            enemy.image.name = 'orc_archer';
+            enemy.image.name = 'Scav';
             enemy.image.size = '50%';
             break;
         case 'KEDR Scav':
-            enemy.image.name = 'orc_mage';
+            enemy.image.name = 'Scav';
             enemy.image.size = '50%';
             break;
 
         // Raiders
         case 'Manul':
-            enemy.image.name = 'Manul';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
         case 'Vepr':
-            enemy.image.name = 'spider_red';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
         case 'Leopard':
-            enemy.image.name = 'spider_green';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
 
         // More Raiders
         case 'Padalschik':
-            enemy.image.name = 'skeleton_archer';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
         case 'Stervyatnik':
-            enemy.image.name = 'skeleton_swordsmaster';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
         case 'Medved':
-            enemy.image.name = 'skeleton_knight';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
         case 'Berkut':
             if (randomizeNum(1, 2) == 1) {
-                enemy.image.name = 'skeleton_mage1';
+                enemy.image.name = 'Raider';
             } else {
-                enemy.image.name = 'skeleton_mage2';
+                enemy.image.name = 'Raider';
             }
             enemy.image.size = '50%';
             break;
         case 'Barrakuda':
-            enemy.image.name = 'skeleton_pirate';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
         case 'Skorpion':
-            enemy.image.name = 'skeleton_samurai';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
         case 'Puma':
-            enemy.image.name = 'skeleton_warrior';
+            enemy.image.name = 'Raider';
             enemy.image.size = '50%';
             break;
 
