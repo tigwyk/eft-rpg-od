@@ -43,7 +43,7 @@ const generateRandomEnemy = (condition) => {
         // Bosses
         'Zaart, the Dominator Goblin', 'Banshee, Skeleton Lord', 'Molten Spider', 'Cerberus Ptolemaios', 'Hellhound Inferni', 'Berthelot, the Undead King', 'Slime King', 'Zodiac Cancer', 'Alfadriel, the Light Titan', 'Tiamat, the Dragon Knight', 'Nameless Fallen King', 'Zodiac Aries', 'Llyrrad, the Ant Queen', 'Clockwork Spider', 'Aragorn, the Lethal Wolf',
         // Monarch
-        'Naizicher, the Spider Dragon', 'Ulliot, the Deathlord', 'Ifrit', 'Shiva', 'Behemoth', 'Blood Manipulation Feral', 'Thanatos', 'Darkness Angel Reaper', 'Zalaras, the Dragon Emperor'
+        'Reshala', 'Glukhar', 'Shturman', 'Killa', 'Tagilla', 'Big Pipe', 'Knight', 'Birdeye', 'Sanitar'
     ];
     const enemyTypes = ['Offensive', 'Defensive', 'Balanced', 'Quick', 'Lethal'];
     let selectedEnemies = null;
@@ -72,7 +72,7 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Behemoth', 'Zalaras, the Dragon Emperor'
+                    'Tagilla', 'Sanitar'
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
@@ -95,7 +95,7 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Ulliot, the Deathlord',
+                    'Glukhar',
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
@@ -115,7 +115,7 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Ifrit', 'Shiva', 'Thanatos'
+                    'Shturman', 'Killa', 'Knight'
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
@@ -137,7 +137,7 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Darkness Angel Reaper', 'Naizicher, the Spider Dragon'
+                    'Birdeye', 'Reshala'
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
@@ -159,7 +159,7 @@ const generateRandomEnemy = (condition) => {
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Blood Manipulation Feral'
+                    'Big Pipe'
                 ].includes(name));
             } else {
                 selectedEnemies = enemyNames.filter(name => [
@@ -529,39 +529,39 @@ const setEnemyImg = () => {
             break;
 
         // Special Boss
-        case 'Naizicher, the Spider Dragon':
+        case 'Reshala':
             enemy.image.name = 'spider_dragon';
             enemy.image.size = '70%';
             break;
-        case 'Ulliot, the Deathlord':
+        case 'Glukhar':
             enemy.image.name = 'skeleton_dragon';
             enemy.image.size = '70%';
             break;
-        case 'Ifrit':
+        case 'Shturman':
             enemy.image.name = 'firelord';
             enemy.image.size = '70%';
             break;
-        case 'Shiva':
+        case 'Killa':
             enemy.image.name = 'icemaiden';
             enemy.image.size = '70%';
             break;
-        case 'Behemoth':
-            enemy.image.name = 'behemoth';
+        case 'Tagilla':
+            enemy.image.name = 'Tagilla';
             enemy.image.size = '70%';
             break;
-        case 'Blood Manipulation Feral':
+        case 'Big Pipe':
             enemy.image.name = 'bm-feral';
             enemy.image.size = '70%';
             break;
-        case 'Thanatos':
-            enemy.image.name = 'thanatos';
+        case 'Knight':
+            enemy.image.name = 'Knight';
             enemy.image.size = '70%';
             break;
-        case 'Darkness Angel Reaper':
+        case 'Birdeye':
             enemy.image.name = 'da-reaper';
             enemy.image.size = '70%';
             break;
-        case 'Zalaras, the Dragon Emperor':
+        case 'Sanitar':
             enemy.image.name = 'zalaras';
             enemy.image.size = '70%';
             break;
