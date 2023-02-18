@@ -372,7 +372,7 @@ const nothingEvent = () => {
     } else if (eventRoll == 3) {
         addDungeonLog("You found a scav body.");
     } else if (eventRoll == 4) {
-        addDungeonLog("You found a corpse.");
+        addDungeonLog("You found a PMC corpse.");
     } else if (eventRoll == 5) {
         addDungeonLog("There is nothing in this area.");
     }
