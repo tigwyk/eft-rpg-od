@@ -468,7 +468,7 @@ const setEnemyImg = () => {
 
         // Bosses
         case 'Cultist Priest':
-            enemy.image.name = 'goblin_boss';
+            enemy.image.name = 'CultistPriest';
             enemy.image.size = '70%';
             break;
         case 'Cultist':
@@ -542,7 +542,7 @@ const setEnemyImg = () => {
             enemy.image.size = '70%';
             break;
         case 'Killa':
-            enemy.image.name = 'icemaiden';
+            enemy.image.name = 'Killa';
             enemy.image.size = '70%';
             break;
         case 'Tagilla':
