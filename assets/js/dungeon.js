@@ -424,7 +424,7 @@ const statBlessing = () => {
 const cursedTotem = (curseLvl) => {
     sfxBuff.play();
     dungeon.settings.enemyScaling += 0.1;
-    addDungeonLog(`The monsters in the dungeon became stronger and the loot quality improved. (Curse Lv.${curseLvl} > Curse Lv.${curseLvl + 1})`);
+    addDungeonLog(`The scavs in the raid became stronger and the loot quality improved. (Curse Lv.${curseLvl} > Curse Lv.${curseLvl + 1})`);
     saveData();
 }
 
