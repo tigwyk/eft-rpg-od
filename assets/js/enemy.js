@@ -41,7 +41,7 @@ const generateRandomEnemy = (condition) => {
         // Skeleton
         'Skeleton Archer', 'Skeleton Swordsmaster', 'Skeleton Knight', 'Skeleton Mage', 'Skeleton Pirate', 'Skeleton Samurai', 'Skeleton Warrior',
         // Bosses
-        'Zaart, the Dominator Goblin', 'Banshee, Skeleton Lord', 'Molten Spider', 'Cerberus Ptolemaios', 'Hellhound Inferni', 'Berthelot, the Undead King', 'Slime King', 'Zodiac Cancer', 'Alfadriel, the Light Titan', 'Tiamat, the Dragon Knight', 'Nameless Fallen King', 'Zodiac Aries', 'Llyrrad, the Ant Queen', 'Clockwork Spider', 'Aragorn, the Lethal Wolf',
+        'Cultist Priest', 'Cultist', 'Sektant', 'Aimbotkin', 'Triggerhappy', 'Scottsdale', 'Cliffhanger', 'Hellshrimp', 'Nevada', 'Madknight', 'Two-Finger', 'Boogerman', 'Juggernaut', 'Donutop', 'Rambo',
         // Monarch
         'Reshala', 'Glukhar', 'Shturman', 'Killa', 'Tagilla', 'Big Pipe', 'Knight', 'Birdeye', 'Sanitar'
     ];
@@ -68,7 +68,7 @@ const generateRandomEnemy = (condition) => {
             // Select name and apply stats for Offensive enemies
             if (condition == "guardian") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Zaart, the Dominator Goblin', 'Banshee, Skeleton Lord', 'Molten Spider', 'Berthelot, the Undead King'
+                    'Cultist Priest', 'Cultist', 'Sektant', 'Scottsdale'
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
@@ -91,7 +91,7 @@ const generateRandomEnemy = (condition) => {
             // Select name and apply stats for Defensive enemies
             if (condition == "guardian") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Slime King', 'Zodiac Cancer', 'Alfadriel, the Light Titan'
+                    'Cliffhanger', 'Hellshrimp', 'Nevada'
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
@@ -111,7 +111,7 @@ const generateRandomEnemy = (condition) => {
             // Select name and apply stats for Balanced enemies
             if (condition == "guardian") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Tiamat, the Dragon Knight', 'Nameless Fallen King', 'Zodiac Aries'
+                    'Madknight', 'Two-Finger', 'Boogerman'
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
@@ -133,7 +133,7 @@ const generateRandomEnemy = (condition) => {
             // Select name and apply stats for Quick enemies
             if (condition == "guardian") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Llyrrad, the Ant Queen', 'Clockwork Spider'
+                    'Juggernaut', 'Donutop'
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
@@ -155,7 +155,7 @@ const generateRandomEnemy = (condition) => {
             // Select name and apply stats for Lethal enemies
             if (condition == "guardian") {
                 selectedEnemies = enemyNames.filter(name => [
-                    'Aragorn, the Lethal Wolf', 'Cerberus Ptolemaios', 'Hellhound Inferni'
+                    'Rambo', 'Aimbotkin', 'Triggerhappy'
                 ].includes(name));
             } else if (condition == "sboss") {
                 selectedEnemies = enemyNames.filter(name => [
@@ -467,63 +467,63 @@ const setEnemyImg = () => {
             break;
 
         // Bosses
-        case 'Zaart, the Dominator Goblin':
+        case 'Cultist Priest':
             enemy.image.name = 'goblin_boss';
             enemy.image.size = '70%';
             break;
-        case 'Banshee, Skeleton Lord':
+        case 'Cultist':
             enemy.image.name = 'skeleton_boss';
             enemy.image.size = '50%';
             break;
-        case 'Molten Spider':
+        case 'Sektant':
             enemy.image.name = 'spider_fire';
             enemy.image.size = '50%';
             break;
-        case 'Cerberus Ptolemaios':
+        case 'Aimbotkin':
             enemy.image.name = 'cerberus_ptolemaios';
             enemy.image.size = '50%';
             break;
-        case 'Hellhound Inferni':
+        case 'Triggerhappy':
             enemy.image.name = 'hellhound';
             enemy.image.size = '50%';
             break;
-        case 'Berthelot, the Undead King':
+        case 'Scottsdale':
             enemy.image.name = 'berthelot';
             enemy.image.size = '50%';
             break;
-        case 'Slime King':
+        case 'Cliffhanger':
             enemy.image.name = 'slime_boss';
             enemy.image.size = '50%';
             break;
-        case 'Zodiac Cancer':
+        case 'Hellshrimp':
             enemy.image.name = 'zodiac_cancer';
             enemy.image.size = '50%';
             break;
-        case 'Alfadriel, the Light Titan':
+        case 'Nevada':
             enemy.image.name = 'alfadriel';
             enemy.image.size = '50%';
             break;
-        case 'Tiamat, the Dragon Knight':
+        case 'Madknight':
             enemy.image.name = 'tiamat';
             enemy.image.size = '50%';
             break;
-        case 'Nameless Fallen King':
+        case 'Two-Finger':
             enemy.image.name = 'fallen_king';
             enemy.image.size = '50%';
             break;
-        case 'Zodiac Aries':
+        case 'Boogerman':
             enemy.image.name = 'zodiac_aries';
             enemy.image.size = '50%';
             break;
-        case 'Clockwork Spider':
+        case 'Donutop':
             enemy.image.name = 'spider_boss';
             enemy.image.size = '50%';
             break;
-        case 'Llyrrad, the Ant Queen':
+        case 'Juggernaut':
             enemy.image.name = 'ant_queen';
             enemy.image.size = '50%';
             break;
-        case 'Aragorn, the Lethal Wolf':
+        case 'Rambo':
             enemy.image.name = 'wolf_boss';
             enemy.image.size = '50%';
             break;
