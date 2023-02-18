@@ -550,7 +550,7 @@ const setEnemyImg = () => {
             enemy.image.size = '70%';
             break;
         case 'Big Pipe':
-            enemy.image.name = 'bm-feral';
+            enemy.image.name = 'BigPipe';
             enemy.image.size = '70%';
             break;
         case 'Knight':
@@ -558,7 +558,7 @@ const setEnemyImg = () => {
             enemy.image.size = '70%';
             break;
         case 'Birdeye':
-            enemy.image.name = 'da-reaper';
+            enemy.image.name = 'Birdeye';
             enemy.image.size = '70%';
             break;
         case 'Sanitar':
