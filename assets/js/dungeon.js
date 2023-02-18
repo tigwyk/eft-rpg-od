@@ -131,7 +131,7 @@ const dungeonEvent = () => {
                         if (eventRoll == 1) {
                             incrementRoom();
                             mimicBattle("door");
-                            addDungeonLog("You moved to the next floor.");
+                            addDungeonLog("You moved to the next area.");
                         } else if (eventRoll == 2) {
                             incrementRoom();
                             choices = `
@@ -302,7 +302,7 @@ const guardianBattle = () => {
     showCombatInfo();
     startCombat(bgmBattleGuardian);
     addCombatLog(`Floor Guardian ${enemy.name} is blocking your way.`);
-    addDungeonLog("You moved to the next floor.");
+    addDungeonLog("You moved to the next area.");
 }
 
 // Guardian boss fight
@@ -368,9 +368,9 @@ const nothingEvent = () => {
     if (eventRoll == 1) {
         addDungeonLog("You explored and found nothing.");
     } else if (eventRoll == 2) {
-        addDungeonLog("You found an empty chest.");
+        addDungeonLog("You found an empty weapons crate.");
     } else if (eventRoll == 3) {
-        addDungeonLog("You found a monster corpse.");
+        addDungeonLog("You found a scav body.");
     } else if (eventRoll == 4) {
         addDungeonLog("You found a corpse.");
     } else if (eventRoll == 5) {
