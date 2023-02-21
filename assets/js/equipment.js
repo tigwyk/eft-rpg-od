@@ -23,13 +23,13 @@ const createEquipment = () => {
         const equipmentTypes = ["Armor", "Shield", "Helmet"];
         equipment.type = equipmentTypes[Math.floor(Math.random() * equipmentTypes.length)];
         if (equipment.type == "Armor") {
-            const equipmentCategories = ["Plate", "Chain", "Leather"];
+            const equipmentCategories = ["Plate Carrier", "Kevlar Vest", "Lightweight Chest Armor"];
             equipment.category = equipmentCategories[Math.floor(Math.random() * equipmentCategories.length)];
         } else if (equipment.type == "Shield") {
             const equipmentCategories = ["Tower", "Kite", "Buckler"];
             equipment.category = equipmentCategories[Math.floor(Math.random() * equipmentCategories.length)];
         } else if (equipment.type == "Helmet") {
-            const equipmentCategories = ["Great Helm", "Horned Helm"];
+            const equipmentCategories = ["Bastion Helmet", "Wendy EXFIL Helm"];
             equipment.category = equipmentCategories[Math.floor(Math.random() * equipmentCategories.length)];
         }
     }
@@ -225,14 +225,14 @@ const equipmentIcon = (equipment) => {
     } else if (equipment == "Submachine gun") {
         return '<i class="ra ra-bowie-knife"></i>';
     } else if (equipment == "Sniper rifle") {
-        return '<i class="ra ra-chain"></i>';
+        return '<i class="ra ra-Kevlar Vest"></i>';
     } else if (equipment == "Grenade launcher") {
         return '<i class="ra ra-Grenade launcher"></i>';
-    } else if (equipment == "Plate") {
+    } else if (equipment == "Plate Carrier") {
         return '<i class="ra ra-vest"></i>';
-    } else if (equipment == "Chain") {
+    } else if (equipment == "Kevlar Vest") {
         return '<i class="ra ra-vest"></i>';
-    } else if (equipment == "Leather") {
+    } else if (equipment == "Lightweight Chest Armor") {
         return '<i class="ra ra-vest"></i>';
     } else if (equipment == "Tower") {
         return '<i class="ra ra-shield"></i>';
@@ -240,9 +240,9 @@ const equipmentIcon = (equipment) => {
         return '<i class="ra ra-heavy-shield"></i>';
     } else if (equipment == "Buckler") {
         return '<i class="ra ra-round-shield"></i>';
-    } else if (equipment == "Great Helm") {
+    } else if (equipment == "Bastion Helmet") {
         return '<i class="ra ra-knight-helmet"></i>';
-    } else if (equipment == "Horned Helm") {
+    } else if (equipment == "Wendy EXFIL Helm") {
         return '<i class="ra ra-helmet"></i>';
     }
 }
