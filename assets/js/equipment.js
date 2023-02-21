@@ -217,11 +217,11 @@ const createEquipment = () => {
 
 const equipmentIcon = (equipment) => {
     if (equipment == "AR-15 rifle") {
-        return '<i class="ra ra-blaster"></i>';
+        return '<i class="ra ra-dragon-wing"></i>';
     } else if (equipment == "7.62 AK rifle") {
         return '<i class="ra ra-relic-blade"></i>';
     } else if (equipment == "Shotgun") {
-        return '<i class="ra ra-relic-blade"></i>';
+        return '<i class="ra ra-blaster"></i>';
     } else if (equipment == "Submachine gun") {
         return '<i class="ra ra-crossed-pistols"></i>';
     } else if (equipment == "Sniper rifle") {
