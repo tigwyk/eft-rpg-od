@@ -26,7 +26,7 @@ const createEquipment = () => {
             const equipmentCategories = ["Plate Carrier", "Kevlar Vest", "Lightweight Chest Armor"];
             equipment.category = equipmentCategories[Math.floor(Math.random() * equipmentCategories.length)];
         } else if (equipment.type == "Shield") {
-            const equipmentCategories = ["Tower", "Kite", "Buckler"];
+            const equipmentCategories = ["Riot Shield", "Face-Shield", "Condor Sunglasses"];
             equipment.category = equipmentCategories[Math.floor(Math.random() * equipmentCategories.length)];
         } else if (equipment.type == "Helmet") {
             const equipmentCategories = ["Bastion Helmet", "Wendy EXFIL Helm"];
@@ -234,11 +234,11 @@ const equipmentIcon = (equipment) => {
         return '<i class="ra ra-vest"></i>';
     } else if (equipment == "Lightweight Chest Armor") {
         return '<i class="ra ra-vest"></i>';
-    } else if (equipment == "Tower") {
+    } else if (equipment == "Riot Shield") {
         return '<i class="ra ra-shield"></i>';
-    } else if (equipment == "Kite") {
+    } else if (equipment == "Face-Shield") {
         return '<i class="ra ra-heavy-shield"></i>';
-    } else if (equipment == "Buckler") {
+    } else if (equipment == "Condor Sunglasses") {
         return '<i class="ra ra-round-shield"></i>';
     } else if (equipment == "Bastion Helmet") {
         return '<i class="ra ra-knight-helmet"></i>';
