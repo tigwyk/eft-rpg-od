@@ -219,9 +219,9 @@ const equipmentIcon = (equipment) => {
     if (equipment == "AR-15 rifle") {
         return '<i class="ra ra-relic-blade"></i>';
     } else if (equipment == "7.62 AK rifle") {
-        return '<i class="ra ra-7.62 AK rifle"></i>';
+        return '<i class="ra ra-relic-blade"></i>';
     } else if (equipment == "Shotgun") {
-        return '<i class="ra ra-flat-Shotgun"></i>';
+        return '<i class="ra ra-relic-blade"></i>';
     } else if (equipment == "Submachine gun") {
         return '<i class="ra ra-bowie-knife"></i>';
     } else if (equipment == "Sniper rifle") {
